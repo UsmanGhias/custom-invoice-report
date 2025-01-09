@@ -1,0 +1,23 @@
+<odoo>
+    <template id="header_layout_invoice">
+        <t t-foreach="docs" t-as="o">
+            <t t-if="o and 'company_id' in o">
+                <t t-set="company" t-value="o.company_id"/>
+            </t>
+            <t t-if="not o or not 'company_id' in o">
+                <t t-set="company" t-value="res_company"/>
+            </t>
+            <div class="border-bottom border-dark header" style="border-bottom: 1px solid #000;">
+                <div class="row">
+                    <div class="col-4">
+                        <strong style="font-size: 22px;"><t t-esc="company.name"/></strong><br/>
+                        <span style="font-size: 18px;"><t t-esc="company.street or ''"/></span><br/>
+                        <span style="font-size: 18px;"><t t-esc="company.city or ''"/> <t t-esc="company.zip or ''"/></span><br/>
+                        <span style="font-size: 18px;">VAT: <t t-esc="company.vat or 'N/A'"/></span><br/>
+                        <span style="font-size: 18px;">Phone: <t t-esc="company.phone or 'N/A'"/></span>
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
