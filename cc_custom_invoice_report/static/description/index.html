@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Custom Invoice PDF Reports</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: #1e1b2e;
+            background-color: #f9f6fd;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #1e1b2e 0%, #3b1b48 100%);
+            color: #ffffff;
+            padding: 60px 20px;
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+        .badge-odoo {
+            background-color: #8e45f1;
+            color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid #ebdcf8;
+            border-radius: 12px;
+            padding: 24px;
+            height: 100%;
+            box-shadow: 0 4px 12px rgba(142, 69, 241, 0.05);
+        }
+        .feature-card h5 {
+            color: #1e1b2e;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .highlight-bar {
+            width: 40px;
+            height: 4px;
+            background-color: #8e45f1;
+            border-radius: 2px;
+            margin-bottom: 16px;
+        }
+        .spec-table th {
+            width: 30%;
+            background-color: #f4eafc;
+        }
+        .footer-card {
+            background: #ffffff;
+            border: 1px solid #ebdcf8;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container py-4">
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center">
+        <span class="badge-odoo">Odoo 17 Community & Enterprise</span>
+        <h1 class="display-5 fw-bold mb-3">Corporate Custom Invoice PDF Reports</h1>
+        <p class="lead text-slate-300 max-w-2xl mx-auto mb-4" style="color: #cbd5e1;">
+            Deliver executive-grade PDF invoices to your corporate clients with custom branding headers, legal Amount in Words conversion, and an optimized A4 print paperformat.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+            <span class="badge bg-secondary px-3 py-2">Module: cc_custom_invoice_report</span>
+            <span class="badge bg-primary px-3 py-2" style="background-color: #8e45f1 !important;">License: OPL-1</span>
+        </div>
+    </div>
+
+    <!-- Overview -->
+    <div class="row mb-5">
+        <div class="col-lg-12">
+            <div class="card border-0 shadow-sm p-4" style="border: 1px solid #ebdcf8 !important;">
+                <h3 class="fw-bold mb-3" style="color: #1e1b2e;">High-Impact Corporate Invoicing</h3>
+                <p>
+                    Standard ERP invoices often suffer from awkward margins, generic layouts, and lack of statutory wording required in international B2B commerce.
+                </p>
+                <p class="mb-0">
+                    The <strong>cc_custom_invoice_report</strong> module delivers a high-definition QWeb PDF invoice template with standardized 12mm print margins, automated legal Amount in Words conversion across global currencies, and clean customer billing metadata.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Features Grid -->
+    <h3 class="fw-bold mb-4" style="color: #1e1b2e;">Key Capabilities</h3>
+    <div class="row g-4 mb-5">
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="highlight-bar"></div>
+                <h5>Executive PDF Layout</h5>
+                <p class="text-muted">
+                    Clean typography, itemized line tables, and crisp borders designed to represent your corporate brand professionally.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="highlight-bar" style="background-color: #a024c3;"></div>
+                <h5>Legal Amount in Words</h5>
+                <p class="text-muted">
+                    Automatically computes and renders total amounts in legal English wording for Dollars, Euros, Pounds, and Riyals/Halalas.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-card">
+                <div class="highlight-bar" style="background-color: #713c69;"></div>
+                <h5>Optimized A4 Paperformat</h5>
+                <p class="text-muted">
+                    Calibrated 12mm margin settings eliminate page clipping across standard office, thermal, and virtual PDF printers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Specifications -->
+    <h3 class="fw-bold mb-4" style="color: #1e1b2e;">Technical Specifications</h3>
+    <div class="card border-0 shadow-sm p-4 mb-5" style="border: 1px solid #ebdcf8 !important;">
+        <table class="table table-bordered spec-table mb-0">
+            <tbody>
+                <tr>
+                    <th>Target Version</th>
+                    <td>Odoo 17.0 (Community & Enterprise)</td>
+                </tr>
+                <tr>
+                    <th>Base Dependencies</th>
+                    <td><code>account</code>, <code>sale</code> (Zero third-party requirements)</td>
+                </tr>
+                <tr>
+                    <th>Technical Namespace</th>
+                    <td><code>cc_custom_invoice_report</code></td>
+                </tr>
+                <tr>
+                    <th>License</th>
+                    <td>Odoo Proprietary License v1.0 (OPL-1)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Support and Inquiries -->
+    <div class="footer-card">
+        <h4 class="fw-bold mb-2">Need Customization or Support?</h4>
+        <p class="text-muted mb-3">
+            Our engineering team provides dedicated support, report customizations, and custom ERP integration.
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="https://usmanghias.co.uk" target="_blank" class="btn btn-primary px-4 py-2" style="background-color: #8e45f1; border-color: #8e45f1;">Developer Portfolio</a>
+            <a href="mailto:support@codcrafters.org" class="btn btn-outline-secondary px-4 py-2">Contact Support</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
