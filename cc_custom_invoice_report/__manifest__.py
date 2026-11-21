@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Corporate Custom Invoice PDF Reports',
-    'version': '17.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Accounting',
     'summary': 'Professional executive invoice layout with custom header/footer, amount in words, and clean A4 paperformat.',
     'description': """
